@@ -1,3 +1,4 @@
+/*add cores do projeto*/
 :root {
     --corprimaria: #fffFFF;
     --cor-secundaria: #c0c0c0;
@@ -5,19 +6,38 @@
     --cor-fundo: #00030c;
 }
 body{
-    background-color: var(--cor-fundo);
-    color:var(--corprimaria);
+    background-color: var(--cor-fundo); /*cor de fundo */
+    color:var(--corprimaria); /*cor da fonte */
 }
 *{
-    margin: 0;
+    /*garantir que esteja zerado ao iniciar o projeto */
+    margin: 0; 
     padding: 0;
 }
 
 .principal{
-    background-image: url(imagens/Background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-image: url(imagens/Background.png); /*add imagem de fundo sem interação com o usuario*/
+    background-repeat: no-repeat; /*n espelhar a imagem*/
+    background-size: contain;  /*ocupar todo o conteiner */
 }
 .conteiner{
-    height: 100vh;
+    height: 100vh; /* ocupar 100% da tela */
+    display: grid; /*separar os elementos da tela */
+    grid-template-columns: 50% 50%; /*dividiu os elementos em coluna*/
 }
+
+.conteiner_botao {
+    background-color: var(--cor-botao);
+    border-radius: 5px; /* arredontar borda do botao*/
+    padding: 1em; /*tamanho da fonte */
+    color: var(--corprimaria); 
+    display: block; /*tirar as limitaçao de tamanho padrao do botao*/
+
+}
+.conteiner_botao2{
+    background-color: transparent;
+    border: 2px solid var(--corprimaria); /* Borda do botao*/
+}
+
+
+/**/
